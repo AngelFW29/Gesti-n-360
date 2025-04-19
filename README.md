@@ -1,2 +1,2 @@
-# Gesti-n-360
+# Gestion-360
 Interfaz Web - Plataforma de Trabajo Remoto para Contables 
