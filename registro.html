@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión 360 - Registro</title>
+    <link rel="icon" href="img/logo_ico.ico" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <a href="index.html" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                <img class="h-12 mr-2" src="img/logo.png" alt="logo">
+                GESTIÓN 360
+            </a>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-8 max-w-4xl w-full">
+                <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Formulario de Registro
+                </h1>
+
+                <!-- FORMULARIO DE REGISTRO -->
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6" action="index.html" method="GET">
+                    <!-- Nombre completo -->
+                    <div>
+                        <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Nombre completo
+                        </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Pedro Valdez"
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                            required />
+                    </div>
+
+                    <!-- Correo electrónico -->
+                    <div>
+                        <label for="correo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Correo electrónico
+                        </label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com"
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                            required />
+                    </div>
+
+                    <!-- País -->
+                    <div>
+                        <label for="pais" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            País
+                        </label>
+                        <input type="text" id="pais" name="pais" placeholder="República Dominicana"
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                            required />
+                    </div>
+
+                    <!-- Especialidad -->
+                    <div>
+                        <label for="especialidad" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Especialidad contable
+                        </label>
+                        <input type="text" id="especialidad" name="especialidad"
+                            placeholder="Auditoría, Impuestos, etc."
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                            required />
+                    </div>
+
+                    <!-- Experiencia laboral -->
+                    <div class="md:col-span-2">
+                        <label for="experiencia" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Experiencia laboral
+                        </label>
+                        <textarea id="experiencia" name="experiencia" rows="3" placeholder="Describe tu experiencia..."
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"></textarea>
+                    </div>
+
+                    <!-- Documentos de verificación -->
+                    <div class="md:col-span-2">
+                        <label for="documentos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Documentos de verificación (opcional)
+                        </label>
+                        <input type="file" id="documentos" name="documentos"
+                            class="w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg cursor-pointer dark:text-white dark:bg-gray-700 dark:border-gray-600" />
+                    </div>
+
+                    <!-- Crear usuario -->
+                    <div>
+                        <label for="usuario" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Crear usuario
+                        </label>
+                        <input type="text" id="usuario" name="usuario" placeholder="usuario123"
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                            required />
+                    </div>
+
+                    <!-- Crear contraseña -->
+                    <div>
+                        <label for="contrasena" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                            Crear contraseña
+                        </label>
+                        <input type="password" id="contrasena" name="contrasena" placeholder="••••••••"
+                            class="w-full p-2.5 text-sm rounded-lg border border-gray-300 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                            required />
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="md:col-span-2">
+                        <button type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg text-sm transition-all duration-200">
+                            Crear Perfil Profesional
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

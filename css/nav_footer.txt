@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores */
+:root {
+    --azul: #003049;
+    --rojo: #e63946;
+    --gris-claro: #f8f9fa;
+    --gris-texto: #6c757d;
+    --blanco: #ffffff;
+}
+
+/* Estructura general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--azul);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: contents;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-flex h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--blanco);
+    margin-right: 12%;
+}
+
+
+/* Navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--rojo);
+}
+
+.btn-login {
+    background-color: var(--rojo);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 2rem 1rem 1rem;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-grid h4 {
+    margin-bottom: 0.5rem;
+    color: var(--blanco);
+}
+
+.footer-grid ul {
+    list-style: none;
+}
+
+.footer-grid li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-grid a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.footer-grid a:hover {
+    color: var(--rojo);
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    color: #ccc;
+}
